@@ -86,7 +86,7 @@ const DownloadForm: React.FC = () => {
       <div className="gradient-header px-6 py-4">
         <h2 className="text-white text-xl font-semibold flex items-center">
           <span className="material-icons mr-2">download</span>
-          Download TikTok Video
+          Download HD TikTok Video
         </h2>
       </div>
 

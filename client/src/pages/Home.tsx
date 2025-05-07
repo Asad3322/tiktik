@@ -1,6 +1,8 @@
 import React from "react";
 import DownloadForm from "@/components/DownloadForm";
 import Instructions from "@/components/Instructions";
+import Faqs from "@/components/Faqs";
+import FeaturesSection from "@/components/FeaturesSection";
 
 const Home: React.FC = () => {
   return (
@@ -25,29 +27,26 @@ const Home: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <DownloadForm />
           <Instructions />
+          <Faqs/>
+          <FeaturesSection/>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-[hsl(var(--dark))] text-white py-6 mt-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <p className="text-sm text-gray-400">
-                This tool is for personal use only. Please respect copyright and terms of service.
-              </p>
-            </div>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <span className="material-icons">help</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <span className="material-icons">policy</span>
-              </a>
-            </div>
+      <footer className="bg-black text-white py-6">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-center">
+         
+            <h3 className="text-xl font-bold text-whitw mb-2">TikTok Video Downloader</h3>
+           
           </div>
+          
+        
+        <div className="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+          <p>© {new Date().getFullYear()} TikTok Video Downloader. All rights reserved by Awais Asif. </p>
         </div>
-      </footer>
+      </div>
+    </footer>
     </div>
   );
 };
